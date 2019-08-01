@@ -1,0 +1,93 @@
+﻿.center, .center-column, .top, .right, .bottom, .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.top    { align-items:     flex-start; }
+.right  { justify-content: flex-end;   }
+.bottom { align-items:     flex-end;   }
+.left   { justify-content: flex-start; }
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+@media (max-width: 1024px) {
+	.desktop {
+		display: none;
+	}
+}
+
+.colorOfText{
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 1px rgb(117, 115, 111);
+}
+
+/* subtitle-tesla's color */
+@media(min-width: 1024px){
+	#sub-tesla{
+	color: rgb(241, 238, 226);
+	}
+}
+@media(max-width: 1024px){
+	#sub-tesla{
+	color: rgb(98, 103, 105);
+	}
+}
+@media(max-width: 768px){
+	#sub-tesla{
+		color: rgb(216, 234, 241);
+		}
+}
+@media(max-width: 600px){
+	#sub-tesla{
+		color: rgb(98, 103, 105);
+		}
+}
+/* <-- */
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+#a { grid-area: a; }
+#b { grid-area: b; }
+#c { grid-area: c; }
+#d { grid-area: d; }
+#e { grid-area: e; }
+
+#grid{
+	display: grid;
+	grid-template-areas: 
+	"a a a a"
+	"b c d e";
+	grid-row-gap: 1rem;
+}
+
+@media (max-width: 512px){
+	#grid{
+		grid-template-areas: 
+		"a a a"
+		"b c d"
+		"e e e";
+	}
+}
+
+@media(min-width: 1025px){
+	#saleBTN:hover{
+		color: rgb(223, 26, 26);
+		border: 0.15em solid rgb(223, 26, 26);
+		width: 100%;
+	}
+	#saleBTN{
+		color: rgb(90, 82, 82);
+		border: 0.15em solid rgb(70, 44, 44);
+		width: 100%;
+	}
+}
